@@ -2,9 +2,13 @@ import "./globals.css";
 import Navbar from "./_Components/Navbar";
 import Footer from "./_Components/Footer"; 
 import FloatingActions from "./_Components/FloatingActions"; 
+import ScrollToTop from "./_Components/ScrollToTop";
 export const metadata = {
   title: "عالم الدهانات | ألوان فخمة لمنزلك",
-  description: "اكتشف أحدث صيحات الألوان والدهانات العصرية في مصر",
+  description: "مؤسسة الفهد للديكور والدهانات بالمدينة المنورة",
+  icons: {
+    icon: "/icon.png",
+  },
 };
 
 export default function RootLayout({ children }) {
@@ -17,8 +21,10 @@ export default function RootLayout({ children }) {
           <Navbar/>
         </main>
 
-        <Footer />
+        
+        <ScrollToTop/>
         <FloatingActions />
+        <Footer />
       </body>
     </html>
   );
