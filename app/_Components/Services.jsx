@@ -2,7 +2,7 @@
 "use client";
 import { motion } from "framer-motion";
 import { useState } from "react";
-import Link from "next/link"; // ضفنا اللينك للربط
+import Link from "next/link"; 
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, FreeMode, Autoplay } from "swiper/modules"; // ضفنا Autoplay لحركة أنعم
 import Lightbox from "yet-another-react-lightbox";
@@ -29,7 +29,7 @@ export default function LuxuryGallery() {
     <section id="works" className="py-20 bg-[#0a0a0a] overflow-hidden" dir="rtl">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
-        {/* رأس السكشن - Responsive Header */}
+        {/*  Responsive Header */}
         <div className="mb-16 text-center">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -55,7 +55,7 @@ export default function LuxuryGallery() {
           </motion.div>
         </div>
 
-        {/* السلايدر - Optimized Swiper */}
+        {/* - Optimized Swiper */}
         <div className="relative px-2 md:px-0 [&_.swiper-button-next]:!text-[#D4AF37] [&_.swiper-button-prev]:!text-[#D4AF37] [&_.swiper-button-next]:after:!text-2xl [&_.swiper-button-prev]:after:!text-2xl">
           <Swiper
             modules={[Navigation, FreeMode, Autoplay]}
@@ -82,9 +82,9 @@ export default function LuxuryGallery() {
                     src={item.src} 
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" 
                     alt="مشروع الفهد للديكور" 
-                    loading="lazy" // تحسين الأداء
+                    loading="lazy" 
                   />
-                  {/* تأثير عند الهوفر يظهر أيقونة التكبير */}
+                  {/*hover*/}
                   <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
                     <div className="p-4 bg-[#D4AF37] rounded-full text-black transform scale-50 group-hover:scale-100 transition-transform duration-500">
                       <Maximize2 size={24} />
@@ -96,7 +96,7 @@ export default function LuxuryGallery() {
           </Swiper>
         </div>
 
-        {/* زرار "مشاهدة الكل" - الرابط الذكي */}
+        {/* Button*/}
         <motion.div 
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}

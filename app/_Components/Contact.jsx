@@ -8,7 +8,7 @@ export default function ContactSection() {
     <section id="contact" className="py-16 md:py-24 bg-[#050505] border-t border-white/5" dir="rtl">
       <div className="max-w-5xl mx-auto px-6 text-center">
         
-        {/* عنوان بسيط وراقي */}
+     
         <motion.div 
           initial={{ opacity: 0, y: 10 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -21,13 +21,13 @@ export default function ContactSection() {
           </p>
         </motion.div>
 
-        {/* روابط التواصل - ترتيب مرن للموبايل */}
+       
         <div className="flex flex-col md:flex-row justify-center items-center gap-8 md:gap-16 lg:gap-24">
           
-          {/* واتساب */}
+          
           <motion.a 
             whileHover={{ y: -5 }}
-            href="https://wa.me/966544569332"
+            href="https://wa.me/01145511112"
             target="_blank"
             className="flex items-center gap-4 group w-full md:w-auto justify-center md:justify-start"
           >
@@ -37,10 +37,10 @@ export default function ContactSection() {
             <span className="text-gray-400 group-hover:text-white text-sm font-medium transition-colors">واتساب</span>
           </motion.a>
 
-          {/* اتصال مباشر */}
+        
           <motion.a 
             whileHover={{ y: -5 }}
-            href="tel:966544569332"
+            href="tel:01145511112"
             className="flex items-center gap-4 group w-full md:w-auto justify-center md:justify-start"
           >
             <div className="w-10 h-10 md:w-11 md:h-11 rounded-full border border-white/10 flex items-center justify-center group-hover:border-[#daa700] transition-all duration-300">
@@ -49,7 +49,7 @@ export default function ContactSection() {
             <span className="text-gray-400 group-hover:text-white text-sm font-medium transition-colors">اتصال هاتفي</span>
           </motion.a>
 
-          {/* الموقع */}
+         
           <div className="flex items-center gap-4 group cursor-default w-full md:w-auto justify-center md:justify-start">
             <div className="w-10 h-10 md:w-11 md:h-11 rounded-full border border-white/10 flex items-center justify-center">
               <MapPin size={18} className="text-gray-400" />

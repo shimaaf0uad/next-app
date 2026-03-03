@@ -36,11 +36,10 @@ const reasons = [
   }
 ];
 
-// Component مخصص لكل كارت عشان نطبق عليه تأثير الـ 3D
 const ReasonCard = ({ item, index }) => {
   const cardRef = useRef(null);
   
-  // حركيات الـ 3D بناءً على حركة الماوس
+
   const x = useMotionValue(0);
   const y = useMotionValue(0);
   
@@ -89,10 +88,10 @@ const ReasonCard = ({ item, index }) => {
       }}
       className="group p-8 rounded-3xl bg-[#111111] border border-white/5 cursor-default relative overflow-hidden transition-all duration-300 hover:border-[#daa700]/30 hover:shadow-[0_15px_40px_-15px_rgba(218,167,0,0.2)]"
     >
-      {/* تأثير التدرج الذهبي الراقص عند الـ Hover */}
+      {/* Hover */}
       <div className="absolute inset-0 bg-gradient-to-t from-[#daa700]/10 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
       
-      {/* لمعان خفيف في الزاوية */}
+      {/* */}
       <div className="absolute top-6 left-6 text-[#daa700]/10 group-hover:text-[#daa700]/30 transition-colors duration-500">
         <Sparkle size={40} />
       </div>
@@ -121,10 +120,10 @@ const ReasonCard = ({ item, index }) => {
 export default function FeaturesSection() {
   return (
     <section id="features" className="py-24 bg-[#0a0a0a] text-white overflow-hidden border-t border-yellow-700/10 text-right" dir="rtl">
-      {/* Container مضبوط لكل الشاشات */}
+      {/* Container */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
-        {/* رأس السكشن - Responsive Title */}
+        {/* - Responsive Title */}
         <div className="mb-20 text-center relative"> 
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -146,12 +145,12 @@ export default function FeaturesSection() {
           </motion.div>
         </div>
 
-        {/* شبكة الأسباب - Responsive Grid */}
+        {/* - Responsive Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {reasons.map((item, index) => (
             <ReasonCard key={index} item={item} index={index} /> // استخدام الـ Component المخصص
           ))}
-        </div>
+        </div>   
       </div>
     </section>
   );

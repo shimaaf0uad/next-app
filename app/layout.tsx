@@ -1,3 +1,4 @@
+
 import "./globals.css";
 import Navbar from "./_Components/Navbar";
 import Footer from "./_Components/Footer"; 
@@ -7,7 +8,7 @@ export const metadata = {
   title: "عالم الدهانات | ألوان فخمة لمنزلك",
   description: "مؤسسة الفهد للديكور والدهانات بالمدينة المنورة",
   icons: {
-    icon: "/icon.png",
+    icon: "/logo.jpeg",
   },
 };
 

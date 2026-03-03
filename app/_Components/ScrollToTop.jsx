@@ -19,7 +19,7 @@ const ScrollToTop = () => {
     return () => window.removeEventListener('scroll', toggleVisibility);
   }, []);
 
-  // دالة الصعود السلس للأعلى
+  
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
