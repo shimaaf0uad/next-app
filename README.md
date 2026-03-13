@@ -1,36 +1,108 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🌌 Astro-Porto | Next.js 14 Premium Portfolio
 
-## Getting Started
+## The Ultimate Solution for Modern Digital Presence
 
-First, run the development server:
+---
+
+## 📋 نظرة عامة على المشروع (Executive Summary)
+
+هذا المشروع هو قالب **Next.js 14** فائق الأداء، صُمم خصيصاً للمبدعين والمبرمجين الذين يبحثون عن واجهة رقمية تجمع بين الأناقة البرمجية والسرعة الصاروخية.
+
+المشروع ليس مجرد واجهة، بل هو **نظام متكامل** يعتمد على تقنيات **Server Components** لضمان أفضل تجربة مستخدم وأعلى معايير الأرشفة في محركات البحث.
+
+---
+
+## 💎 المميزات الحصرية (Exclusive Features)
+
+| الميزة | الوصف التقني |
+|------|------|
+| High Performance | سرعة تحميل فائقة (Lighthouse Score 95+) بفضل تقنيات Next.js |
+| Responsive 2.0 | تصميم متجاوب بالكامل يعتمد على نظام الشبكات في Tailwind CSS |
+| SEO Ready | هيكلة Metadata متقدمة لكل صفحة لضمان الظهور في نتائج البحث |
+| Modular Design | الكود مقسم إلى مكونات (Atomic Components) لسهولة التخصيص |
+| Smooth Interaction | حركات انسيابية (Animations) تعتمد على Framer Motion |
+
+---
+
+## 🛠 الترسانة التقنية (Technical Stack)
+
+- **Core:** Next.js 14 (App Router Architecture)
+- **Styling:** Tailwind CSS (Utility-first framework)
+- **Icons:** Lucide-React & FontAwesome
+- **Fonts:** Vercel Geist Font Family
+- **Rendering:** Hybrid Rendering (SSG & SSR)
+
+---
+
+## 📁 هيكلة الملفات (Project Directory)
+
+تم تنظيم الكود ليتبع أفضل الممارسات البرمجية **Clean Code Architecture**
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+root/
+├── app/               # المسارات والصفحات (Main Routes)
+│   ├── layout.tsx     # الهيكل العام للموقع
+│   └── page.tsx       # الصفحة الرئيسية
+├── components/        # المكونات البرمجية القابلة لإعادة الاستخدام
+│   ├── UI/            # أزرار ومدخلات
+│   └── Sections/      # أقسام الموقع (Hero, About, Projects)
+├── public/            # الأصول الثابتة (Images, Favicons)
+│   └── img/           # صور المشروع ومعرض الأعمال
+├── next.config.mjs    # إعدادات بيئة العمل
+└── package.json       # سجل المكتبات والاعتمادات
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🚀 دليل التشغيل السريع (Deployment Guide)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### 1️⃣ المتطلبات الأساسية
 
-## Learn More
+- Node.js **الإصدار 18 أو أحدث**
+- مدير حزم **npm أو yarn**
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### 2️⃣ خطوات التثبيت
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+افتح **Terminal** داخل مجلد المشروع ثم نفذ الأوامر التالية:
 
-## Deploy on Vercel
+```bash
+# تثبيت جميع المكتبات
+npm install
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+# تشغيل وضع التطوير
+npm run dev
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+### 3️⃣ بناء النسخة النهائية (Production Build)
+
+عند الرغبة في رفع الموقع على استضافة حقيقية:
+
+```bash
+npm run build
+```
+
+---
+
+## 👩‍💻 فريق العمل (Development Team)
+
+تم تصميم وتطوير هذا المشروع بمعايير عالمية بواسطة:
+
+**Shimaa Fouad**  
+Lead Frontend Engineer & Next.js Specialist
+
+---
+
+## 📜 شروط الاستخدام (License & Terms)
+
+هذا الكود المصدري مخصص للاستخدام **التجاري والشخصي للمشتري**.
+
+يُمنع إعادة بيع الكود كـ **قالب جاهز** على منصات أخرى دون إذن مسبق.
+
+---
+
+⭐ شكراً لثقتكم في أعمالنا  
+نحن نسعى دائماً لتقديم الأفضل
